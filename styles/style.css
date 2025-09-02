@@ -72,13 +72,6 @@ h3{ font-size: 1.05rem; color:#334155; }
   text-align: center;
   color: #fff;
 
-  /* banner image + a subtle dark overlay for readable white text */
-  background:
-    linear-gradient(0deg, rgba(0,0,0,.55), rgba(0,0,0,.35)),
-    url("../assets/hero.jpeg") center / cover no-repeat;  /* <- path from CSS file */
-}
-.hero h1{ color:#fff; font-weight:800; letter-spacing:.02em; }
-
 /* =========================
    Buttons
    ========================= */

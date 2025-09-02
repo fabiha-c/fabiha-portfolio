@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLASS Project — Fabiha I. Chowdhury</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a aria-current="page" href="glass-project.html">GLASS Project</a>
+      <a href="experiences.html">Experiences</a>
+    </nav>
+  </header>
+
+  <section class="hero"><h1>GLASS Project</h1></section>
+
+  <main>
+    <section class="section">
+      <div class="container narrow">
+        <h2>About GLASS Projects</h2>
+        <p>
+          Projects align with
+          <a href="https://engineering.nyu.edu/research/areas-excellence" target="_blank" rel="noopener">Tandon Areas of Excellence</a>,
+          the <a href="https://www.nae.edu/20437/Grand-Challenges-For-Engineering" target="_blank" rel="noopener">NAE Grand Challenges</a>,
+          and the <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener">UN SDGs</a>.
+        </p>
+
+        <h2>Mission Statement</h2>
+        <p>Paste your mission statement here (equitable healthcare/dental care focus, etc.).</p>
+
+        <details class="accordion" open>
+          <summary>Areas of Excellence</summary>
+          <div class="body">
+            <p>Paste your Areas of Excellence content here.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>UN Sustainability Development Goals / NAE Grand Challenges</summary>
+          <div class="body">
+            <p>Paste your SDG/NAE content here (e.g., SDG 3 and SDG 10) and your synthesis paragraph.</p>
+          </div>
+        </details>
+
+        <h2>Poster</h2>
+        <div class="placeholder">Add image or PDF link when ready.</div>
+
+        <h2>Final Paper</h2>
+        <div class="placeholder">Add link to the paper when ready.</div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container center">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:fic2006@nyu.edu">fic2006@nyu.edu</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container center"><p>&copy; <span id="year"></span> Fabiha I. Chowdhury</p></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

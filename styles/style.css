@@ -1,0 +1,123 @@
+/* ====== Brand & base ====== */
+:root{
+  --nyu-purple: #57068c;
+  --nyu-purple-200: #ab82c5;
+  --teal: #00A99D;
+
+  --bg: #f3e9e3;       /* warm beige like the mockup */
+  --ink: #161616;
+  --muted: #6b6b6b;
+  --border: #b8aea5;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ====== Top navigation ====== */
+.top-nav{
+  padding: 20px 0 8px;
+}
+.nav-list{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: clamp(24px, 6vw, 90px);
+  padding: 0;
+}
+.nav-list a{
+  text-decoration: none;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 700;
+  padding: .25rem .35rem;
+  border-radius: .4rem;
+}
+.nav-list a[aria-current="page"]{
+  outline: 1px solid transparent; /* reserved for accessibility */
+}
+.nav-list a:focus-visible{
+  outline: 2px solid var(--nyu-purple);
+  outline-offset: 2px;
+}
+
+/* ====== Layout ====== */
+.wrapper{
+  width: min(1100px, 92%);
+  margin: 24px auto 56px;
+}
+
+/* Card container that matches the screenshot */
+.hero-card{
+  border: 2px solid var(--border);
+  padding: clamp(18px, 2.5vw, 28px);
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: clamp(20px, 3vw, 36px);
+  align-items: center;
+  background: rgba(255,255,255,0.25);
+}
+
+/* Left column */
+.hero-title{
+  /* The screenshot uses a strong sans; keep Inter here to match look */
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 800;
+  font-size: clamp(32px, 5.6vw, 64px);
+  line-height: 1.1;
+  margin: 10px 0 12px;
+}
+.hero-sub{
+  font-size: clamp(16px, 1.6vw, 22px);
+  color: #222;
+  max-width: 36ch;
+  margin: 0 0 24px 0;
+}
+
+/* Social row */
+.socials{ display: flex; gap: 16px; align-items: center; }
+.icon{
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform .12s ease, background .12s ease, color .12s ease, border-color .12s ease;
+}
+.icon:hover{
+  transform: translateY(-1px);
+  background: #fff;
+  color: var(--nyu-purple);
+  border-color: var(--nyu-purple-200);
+}
+
+/* Right column */
+.hero-photo{
+  aspect-ratio: 4/3;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.hero-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 880px){
+  .hero-card{
+    grid-template-columns: 1fr;
+  }
+  .hero-sub{ max-width: 65ch; }
+}

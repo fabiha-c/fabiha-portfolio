@@ -1,101 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fabiha I. Chowdhury — Home</title>
-  <meta name="description" content="E-portfolio of Fabiha I. Chowdhury — NYU Tandon.">
+  <meta name="description" content="Professional website of Fabiha I. Chowdhury — GLASS Scholar at NYU Tandon, aspiring dentist focused on oral health equity.">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <!-- Navigation -->
   <header class="site-header">
-    <nav class="nav" aria-label="Primary">
-      <a aria-current="page" href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="glass-project.html">GLASS Project</a>
-      <a href="experiences.html">Experiences</a>
-    </nav>
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Primary navigation">
+        <a href="index.html" class="nav-logo">Fabiha <span>Chowdhury</span></a>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <div class="nav">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="experience.html">Projects & Experience</a>
+          <a href="leadership.html">Leadership & Service</a>
+          <a href="contact.html">Résumé & Contact</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- Banner like your Google Sites -->
-  <section class="hero">
-    <h1>Fabiha I. Chowdhury</h1>
-  </section>
-
   <main>
-    <!-- Welcome + Resume button -->
-    <section class="section">
-      <div class="container narrow center">
-        <p class="lead">
-          Hello and welcome! I’m Fabiha, a dedicated senior pursuing a Bachelor of Science in Biomolecular
-          Science at NYU Tandon with a minor in Public Policy &amp; Management. This e-portfolio is a window into my
-          academic journey, personal growth, and professional aspirations. Dive in to explore my projects, experiences, and the
-          lessons I’ve learned along the way.
-        </p>
-        <p class="cta-row">
-          <a class="btn primary" href="https://docs.google.com/document/d/1_u2SeY73GPrXC97-mZV2ppM8kVXJDkHUX-XO0QR2-3A/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- Embedded resume preview (optional; replace the URL) -->
-    <section class="section">
+    <!-- Hero Section -->
+    <section class="hero">
       <div class="container">
-        <div class="embed">
-          <iframe title="Resume preview" src="https://docs.google.com/document/d/1_u2SeY73GPrXC97-mZV2ppM8kVXJDkHUX-XO0QR2-3A/edit?usp=sharing"></iframe>
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-tagline">GLASS Scholar • NYU Tandon '26</p>
+            <h1>Hi, I'm <span>Fabiha</span></h1>
+            <p class="hero-intro">Senior pursuing Biomolecular Science with a minor in Public Policy & Management. Aspiring dentist passionate about promoting accessibility and equity in oral healthcare worldwide.</p>
+            <div class="hero-cta">
+              <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+              <a href="assets/Fabiha_Chowdhury_Resume.pdf" class="btn btn-outline" download>Download Résumé</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="assets/headshot.jpg" alt="Fabiha Chowdhury - professional headshot">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 2×2 photo grid with captions -->
+    <!-- Quick Intro / Mission Preview -->
+    <section class="section gradient">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Focus</span>
+          <h2>Promoting Accessibility & Equity in Dentistry</h2>
+          <p>Through cross-cultural clinical exposure, research, and policy engagement, I'm working to understand and address global oral health disparities.</p>
+        </div>
+        
+        <div class="windows-grid">
+          <div class="window-card">
+            <div class="window-icon global">🌍</div>
+            <h3>Global Competency</h3>
+            <ul>
+              <li>Study abroad at NYU Abu Dhabi</li>
+              <li>HUMAN'INSA program in Lyon, France</li>
+              <li>Waseda University, Tokyo, Japan</li>
+              <li>Hanyang University, Seoul, South Korea</li>
+              <li>Clinical shadowing in Sri Lanka & Kenya</li>
+            </ul>
+          </div>
+          
+          <div class="window-card">
+            <div class="window-icon academic">📚</div>
+            <h3>Academic Excellence</h3>
+            <ul>
+              <li>B.S. Biomolecular Science</li>
+              <li>Minor in Public Policy & Management</li>
+              <li>VIP: Everyday Assistive Technology</li>
+              <li>Research Assistant, NYU Abu Dhabi</li>
+              <li>Research Assistant, NYU Dentistry</li>
+            </ul>
+          </div>
+          
+          <div class="window-card">
+            <div class="window-icon professional">💼</div>
+            <h3>Professional Development</h3>
+            <ul>
+              <li>Dental Assistant, NYC clinic</li>
+              <li>WCDT 2024 Conference, Tokyo</li>
+              <li>Global Career Accelerator</li>
+              <li>Writing Partner, Tandon Writing Center</li>
+            </ul>
+          </div>
+          
+          <div class="window-card">
+            <div class="window-icon leadership">🎯</div>
+            <h3>Leadership Development</h3>
+            <ul>
+              <li>GLASS Wellness Ambassador</li>
+              <li>GLASS Event Planner</li>
+              <li>Lead Designer for GLASS branding</li>
+              <li>Tandon Accessibility Team</li>
+            </ul>
+          </div>
+          
+          <div class="window-card">
+            <div class="window-icon service">❤️</div>
+            <h3>Commitment to Service</h3>
+            <ul>
+              <li>Hospital volunteer, Sri Lanka</li>
+              <li>Clinical shadowing, Kenya</li>
+              <li>GLASS Event Team Member</li>
+              <li>Alternative Break service trips</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
     <section class="section">
       <div class="container">
-        <div class="grid-4 cards">
-          <figure class="card">
+        <div class="section-header">
+          <span class="section-label">Highlights</span>
+          <h2>Moments from My GLASS Journey</h2>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
             <img src="assets/home-gallery/srilanka.jpg" alt="Fabiha by the coast in Galle, Sri Lanka">
-            <figcaption>Excursion in Galle, Sri Lanka</figcaption>
-          </figure>
-          <figure class="card">
-            <img src="assets/home-gallery/nyuad-iftar.jpg" alt="Chancellor’s Iftar gathering at NYU Abu Dhabi">
-            <figcaption>Chancellor’s Iftar during Ramadan in NYU Abu Dhabi</figcaption>
-          </figure>
-          <figure class="card">
+            <div class="gallery-caption">Excursion in Galle, Sri Lanka</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/home-gallery/nyuad-iftar.jpg" alt="Chancellor's Iftar gathering at NYU Abu Dhabi">
+            <div class="gallery-caption">Chancellor's Iftar at NYU Abu Dhabi</div>
+          </div>
+          <div class="gallery-item">
             <img src="assets/home-gallery/rainforest.jpg" alt="Trail bridge in a Sri Lankan rainforest">
-            <figcaption>Hiking in the Rainforest in Sri Lanka</figcaption>
-          </figure>
-          <figure class="card">
+            <div class="gallery-caption">Hiking in Sri Lanka</div>
+          </div>
+          <div class="gallery-item">
             <img src="assets/home-gallery/oingt-france.jpg" alt="Stone street view in Oingt, France">
-            <figcaption>Exploring the commune of Oingt in France</figcaption>
-          </figure>
+            <div class="gallery-caption">Exploring Oingt, France</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section alt">
-      <div class="container center">
-        <h2>Contact Me</h2>
-        <p><a href="mailto:fic2006@nyu.edu">fic2006@nyu.edu</a></p>
-        <p>
-          <a class="icon" href="https://www.linkedin.com/in/fabiha-chowdhury-751a35296" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5Zm.02 6H2v11h3V9.5ZM9 9.5H6v11h3v-6.1c0-2.37 3-2.55 3 0V20.5h3v-6.9c0-4.43-4.77-4.26-6-2.09V9.5Z"/></svg>
-          </a>
-        </p>
+    <!-- CTA Section -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Let's Connect</h2>
+            <p>I'm always eager to discuss oral health equity, global health research, or opportunities in dental healthcare. Feel free to reach out!</p>
+            <p><a href="mailto:fic2006@nyu.edu">fic2006@nyu.edu</a></p>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/fabiha-chowdhury-751a35296" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://engineering.nyu.edu/student/fabiha-chowdhury" target="_blank" rel="noopener" class="social-link" aria-label="NYU GLASS Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container center">
-      <p>&copy; <span id="year"></span> Fabiha I. Chowdhury</p>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Fabiha I. Chowdhury. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
+    // Update year
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
   </script>
 </body>
 </html>
